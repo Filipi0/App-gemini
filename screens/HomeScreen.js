@@ -5,20 +5,24 @@ export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Bem-vindo ao Chat!</Text>
-      
-      <TouchableOpacity 
-        style={styles.chatButton}
-        onPress={() => navigation.navigate("Chat")}
-      >
-        <Text style={styles.buttonText}>Iniciar Chat</Text>
-      </TouchableOpacity>
 
-      <TouchableOpacity 
-        style={styles.historyButton} 
-        onPress={() => navigation.navigate("History")}
-      >
-        <Text style={styles.buttonText}>Ver Histórico</Text>
-      </TouchableOpacity>
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity 
+          style={styles.chatButton}
+          onPress={() => navigation.navigate("Chat")}
+          activeOpacity={0.7} // Efeito ao pressionar
+        >
+          <Text style={styles.buttonText}>Iniciar Chat</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity 
+          style={styles.historyButton} 
+          onPress={() => navigation.navigate("History")}
+          activeOpacity={0.7} // Efeito ao pressionar
+        >
+          <Text style={styles.buttonText}>Ver Histórico</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
@@ -28,31 +32,50 @@ const styles = StyleSheet.create({
     flex: 1, 
     justifyContent: "center", 
     alignItems: "center", 
-    padding: 20
+    padding: 20,
+    backgroundColor: "#404467", // Fundo escuro
   },
   title: { 
-    fontSize: 24, 
+    fontSize: 28, 
     marginBottom: 30,
     fontWeight: "bold",
+    color: "#fffaac", // Texto amarelo claro
+    textAlign: "center",
+  },
+  buttonContainer: {
+    width: "100%",
+    alignItems: "center",
+    gap: 15, // Espaçamento entre os botões
   },
   chatButton: {
-    backgroundColor: "#4caf50",
-    padding: 12,
-    borderRadius: 16,
-    marginBottom: 20,
-    width: "50%",
-    alignItems: "center",
-  },
-  historyButton: {
-    backgroundColor: "#2196f3",
-    padding: 12,
-    borderRadius: 16,
+    backgroundColor: "#a3b6a2", // Verde suave
+    paddingVertical: 14,
+    paddingHorizontal: 24,
+    borderRadius: 25,
     width: "70%",
     alignItems: "center",
+    shadowColor: "#000", // Sombra
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 6, // Para Android
+  },
+  historyButton: {
+    backgroundColor: "#b2ccaf", // Verde mais claro
+    paddingVertical: 14,
+    paddingHorizontal: 24,
+    borderRadius: 25,
+    width: "70%",
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 6,
   },
   buttonText: {
-    color: "#ffffff",
-    fontSize: 16,
+    color: "#404467", // Texto escuro contrastante
+    fontSize: 18,
     fontWeight: "bold",
   },
 });
