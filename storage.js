@@ -15,7 +15,7 @@ export async function saveMessage(message) {
 export async function deleteMessage(index) {
   const messages = await getMessages();
   messages.splice(index, 1);
-  await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(messages));
+  await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(messages)); //atualiza as mensagens
 }
 
 export async function clearMessages() {

@@ -33,35 +33,35 @@ const styles = StyleSheet.create({
     justifyContent: "center", 
     alignItems: "center", 
     padding: 20,
-    backgroundColor: "#404467", // Fundo escuro
+    backgroundColor: "#404467",
   },
   title: { 
     fontSize: 28, 
     marginBottom: 30,
     fontWeight: "bold",
-    color: "#fffaac", // Texto amarelo claro
+    color: "#fffaac", 
     textAlign: "center",
   },
   buttonContainer: {
     width: "100%",
     alignItems: "center",
-    gap: 15, // Espaçamento entre os botões
+    gap: 15,
   },
   chatButton: {
-    backgroundColor: "#a3b6a2", // Verde suave
+    backgroundColor: "#a3b6a2", 
     paddingVertical: 14,
     paddingHorizontal: 24,
     borderRadius: 25,
     width: "70%",
     alignItems: "center",
-    shadowColor: "#000", // Sombra
+    shadowColor: "#000", 
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.2,
     shadowRadius: 4,
-    elevation: 6, // Para Android
+    elevation: 6,
   },
   historyButton: {
-    backgroundColor: "#a3b6a2", // Verde mais claro
+    backgroundColor: "#a3b6a2",
     paddingVertical: 14,
     paddingHorizontal: 24,
     borderRadius: 25,
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     elevation: 6,
   },
   buttonText: {
-    color: "#404467", // Texto escuro contrastante
+    color: "#404467", 
     fontSize: 18,
     fontWeight: "bold",
   },

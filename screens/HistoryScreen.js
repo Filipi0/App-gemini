@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: "#404467", // Fundo escuro sofisticado
+    backgroundColor: "#404467",
   },
   scrollView: {
     flex: 1,
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 10,
     marginBottom: 15,
-    backgroundColor: "#b2ccaf", // Verde claro para mensagens do usuário
+    backgroundColor: "#b2ccaf", 
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.1,
@@ -132,14 +132,14 @@ const styles = StyleSheet.create({
   input: {
     borderWidth: 1,
     borderColor: "#5c627a",
-    backgroundColor: "#a3b6a2", // Verde suave para destacar input
+    backgroundColor: "#a3b6a2",
     padding: 12,
     borderRadius: 8,
     color: "#404467",
     marginBottom: 10,
   },
   saveButton: {
-    backgroundColor: "#a3b6a2", // Verde suave
+    backgroundColor: "#a3b6a2", 
     padding: 10,
     borderRadius: 10,
     marginLeft: 5,
