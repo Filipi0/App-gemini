@@ -145,18 +145,18 @@ const styles = StyleSheet.create({
     marginLeft: 5,
   },
   editButton: {
-    backgroundColor: "#fffaac", // Amarelo claro para destaque
+    backgroundColor: "#849C81",
     padding: 10,
-    borderRadius: 10,
+    borderRadius: 6,
     marginLeft: 5,
   },
   deleteButton: {
-    backgroundColor: "#ff4d4d", // Vermelho para deletar
+    backgroundColor: "#849C81",
     padding: 10,
-    borderRadius: 10,
+    borderRadius: 6,
   },
   buttonText: {
-    color: "#404467",
+    color: "#FFFBC2",
     fontSize: 14,
     fontWeight: "bold",
   },
@@ -166,11 +166,11 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   clearHistoryButton: {
-    width: "80%",
+    width: "100%",
     alignSelf: "center",
-    backgroundColor: "#ff4d4d",
+    backgroundColor: "#b2ccaf",
     paddingVertical: 12,
-    borderRadius: 16,
+    borderRadius: 6,
     alignItems: "center",
     justifyContent: "center",
     marginTop: 10,
@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
   clearHistoryButtonText: {
-    color: "#fff",
+    color: "#404467",
     fontSize: 16,
     fontWeight: "bold",
   },

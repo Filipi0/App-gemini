@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     elevation: 6, // Para Android
   },
   historyButton: {
-    backgroundColor: "#b2ccaf", // Verde mais claro
+    backgroundColor: "#a3b6a2", // Verde mais claro
     paddingVertical: 14,
     paddingHorizontal: 24,
     borderRadius: 25,

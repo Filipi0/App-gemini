@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#b2ccaf", // Verde claro
     paddingVertical: 12,
     paddingHorizontal: 20,
-    borderRadius: 10,
+    borderRadius: 6,
     marginLeft: 8,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 4 },
